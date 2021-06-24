@@ -16,4 +16,4 @@ jobs:
         run: echo "${{ steps.download.outputs.success-message }}"
       # confirm file exists
       - name: Get the output success message
-        run: echo "pwd; ls -a;"
+        run: "pwd; ls -a;"
