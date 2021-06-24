@@ -120,7 +120,7 @@ try {
 
     downloadContrastSecurity(retrievedOSType, agentType, downloadLocation, '' );
 
-    const successMessage = `successfully downloaded Contrast Security ${agentType} agent`;
+    const successMessage = `successfully downloaded Contrast Security ${agentType} agent in directory: ${downloadLocation}`;
     core.setOutput("success-message", successMessage);
 
     const payload = JSON.stringify(github.context.payload, undefined, 2);
