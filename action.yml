@@ -1,12 +1,16 @@
 name: 'download Contrast Security Agent'
 description: 'download Contrast Security Agent in current working directory' #java agent only working agent type
 inputs:
-  agent-type:  # id of input
+  agent-type:
     description: 'type of agent to download'
     required: true
     default: 'java'
+  download-location:
+    description: 'the location where the contrast agent will be downloaded'
+    required: true
+    default: 'local'
 outputs:
-  success-message: # id of output
+  success-message:
     description: 'string containing downloaded file name with success indicator'
 runs:
   using: 'node12'
