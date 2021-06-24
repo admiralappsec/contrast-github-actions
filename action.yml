@@ -6,7 +6,7 @@ inputs:
     required: true
     default: 'java'
 outputs:
-  confirmation: # id of output
+  success-message: # id of output
     description: 'string containing downloaded file name with success indicator'
 runs:
   using: 'node12'
