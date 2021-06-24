@@ -112,10 +112,13 @@ const downloadContrastSecurity = ( platformType, agentType, customDownloadLocati
 try {
     const agentType = core.getInput(`agent-type`);
     console.log(`Agent type: ${agentType}`);
+    
+    const downloadLocation = core.getInput(`download-location`);
+    console.log(`Download location: ${downloadLocation}`);
 
     const retrievedOSType = getPlatform();
 
-    downloadContrastSecurity(retrievedOSType, agentType, `local`, '' );
+    downloadContrastSecurity(retrievedOSType, agentType, downloadLocation, '' );
 
     const successMessage = `successfully downloaded Contrast Security ${agentType} agent`;
     core.setOutput("success-message", successMessage);
