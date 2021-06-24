@@ -47,7 +47,7 @@ const downloadContrastSecurity = ( platformType, agentType, customDownloadLocati
         if (customDownloadLocation == 'local') {
             console.log(`custom download located was detected as local.  Using current directory as download location.`);
             downloadLocation = process.cwd();
-            console.log(`current working directory: downloadLocation`);
+            console.log(`current working directory: ${downloadLocation}`);
         }
 
         if (customDownloadLocation == "") {
