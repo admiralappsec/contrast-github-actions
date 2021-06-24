@@ -1,21 +1,26 @@
-# Hello world javascript action
+# Download Contrast Security Agent javascript action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+This action downloads a Contrast Security agent in a directory.
 
 ## Inputs
 
-### `who-to-greet`
+### `agent-type`
 
-**Required** The name of the person to greet. Default `"World"`.
+**Required** Type of Contrast Agent to download. Default `"java"`.
+
+### `download-location`
+
+**Required** Location where Contrast Security agent will be downloaded to. Default `"local"`.
 
 ## Outputs
 
-### `time`
+### `success-message`
 
-The time we greeted you.
+String generated confirming successful download of Contrast Security agent
 
 ## Example usage
 
-uses: actions/hello-world-javascript-action@v1.1
+uses: admiralappsec/contrast-github-actions@main
 with:
-  who-to-greet: 'Mona the Octocat'
+  agent-type: 'java'
+  download-location: 'local'
