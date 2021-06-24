@@ -6,9 +6,10 @@ jobs:
     name: testing contrast security actions
     steps:
       - name: download agent action step
+        id: download
         uses: admiralappsec/contrast-github-actions@main
         with:
           agent-type: 'java'
       # Use the output from the `hello` step
       - name: Get the output success message
-        run: echo "The time was ${{ steps.hello.outputs.success-message }}"
+        run: echo "The time was ${{ steps.download.outputs.success-message }}"
