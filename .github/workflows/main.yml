@@ -5,11 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     name: testing contrast security actions
     steps:
-      - name: Hello world action step
-        id: hello
-        uses: actions/hello-world-javascript-action@v1.1
+      - name: download agent action step
+        uses: admiralappsec/contrast-github-actions@master
         with:
           agent-type: 'java'
       # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+      - name: Get the output success message
+        run: echo "The time was ${{ steps.hello.outputs.success-message }}"
