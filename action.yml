@@ -7,7 +7,7 @@ inputs:
     default: 'java'
   download-location:
     description: 'the location where the contrast agent will be downloaded'
-    required: true
+    required: false
     default: 'local'
 outputs:
   success-message:
