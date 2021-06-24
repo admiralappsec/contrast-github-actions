@@ -1,13 +1,13 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'download Contrast Security Agent'
+description: 'download Contrast Security Agent in current working directory' #java agent only working agent type
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  agent-type:  # id of input
+    description: 'type of agent to download'
     required: true
-    default: 'World'
+    default: 'java'
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  confirmation: # id of output
+    description: 'string containing downloaded file name with success indicator'
 runs:
   using: 'node12'
   main: 'index.js'
