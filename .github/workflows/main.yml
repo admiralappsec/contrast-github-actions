@@ -10,7 +10,7 @@ jobs:
         uses: admiralappsec/contrast-github-actions@main
         with:
           agent-type: 'java'
-          download-location: ''
+          download-location: '/opt/contrast/'
       # Use the output from the `hello` step
       - name: Get the output success message
         run: echo "${{ steps.download.outputs.success-message }}"
