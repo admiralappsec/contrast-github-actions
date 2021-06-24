@@ -6,7 +6,7 @@ jobs:
     name: testing contrast security actions
     steps:
       - name: download agent action step
-        uses: admiralappsec/contrast-github-actions@master
+        uses: admiralappsec/contrast-github-actions@main
         with:
           agent-type: 'java'
       # Use the output from the `hello` step
