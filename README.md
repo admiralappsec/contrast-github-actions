@@ -24,3 +24,5 @@ uses: admiralappsec/contrast-github-actions@main
 with:
   agent-type: 'java'
   download-location: 'local'
+  
+  ..........
