@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: download agent action step
         id: download
-        uses: admiralappsec/contrast-github-actions@main
+        uses: admiralappsec/github-actions-download-agent-local@main
         with:
           agent-type: 'java'
           download-location: 'local'
